@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Dotmatrix from '../components/Dotmatrix.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Umar Rajguru">
+	<html>
+		<body>
+			<div id="main">
+				<Dotmatrix />
+				<h1>hi, i'm umar!</h1>
+			</div>
+		</body>
+	  </html>
+</Layout>
+
+<style>
+	body {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		line-height: 1.6;
+	}
+	h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align:center;
+	}
+	#main {
+		text-align:center;
+		width: 35em;
+		margin: 4em auto;
+	}
+
+
+
+</style>
