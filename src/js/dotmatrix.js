@@ -71,7 +71,7 @@ function update() {
     }
 
     GRID = nextGrid;
-    var small = braillify(GRID, 32, 32);
+    var small = braillify(GRID, WIDTH, HEIGHT);
     document.getElementById("dotmatrix").innerHTML = fixWidth(output(small, 16, 8));
 }
 
@@ -88,8 +88,8 @@ function neighbors(x, y) {
 }
 
 window.onload = function() {
-	for (var i = 0; i < 32; i++) {
-		for (var j = 0; j < 32; j++) {
+	for (var i = 0; i < WIDTH; i++) {
+		for (var j = 0; j < HEIGHT; j++) {
 			if (Math.random() > 0.8) {
 				GRID[i][j] = 1;
 			}
