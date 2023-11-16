@@ -1,21 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Dotmatrix from '../components/Dotmatrix.astro';
----
+import Container from '../components/Container.astro';
+--- 
 
 <Layout title="Umar Rajguru">
 	<html>
 		<body>
 			<div id="main">
 				<Dotmatrix />
-				<h1>hi! i'm umar.</h1>
+				<h1>hi! i'm umar.</h1>	
+				<Container />		
 			</div>
+			
 		</body>
 	  </html>
 </Layout>
 
 <style>
 	html {
+		/* overflow: hidden; */
 		margin: auto;
 		padding: 0rem;
 		width: 800px;
@@ -24,7 +28,7 @@ import Dotmatrix from '../components/Dotmatrix.astro';
 		background-color: #1c1e21;
 	}
 	#main {
-		text-align:center;
+		/* text-align:center; */
 		width: 35em;
 		margin: 4.0em auto;
 		color: #1c1e21;
