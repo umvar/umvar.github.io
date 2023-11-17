@@ -10,14 +10,13 @@ container
  <div id="container">
     <div id="sidebar">
         <!-- Add your sidebar content here -->
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">film</a></li>
+            <a style="color:rgba(0, 0, 0, 1); font-weight: bold;" href="#">home</a>
+            <a style="color:rgba(0, 0, 0, 0.4)" href="#">projects</a>
+            <a style="color:rgba(0, 0, 0, 0.4)" href="#">film</a>
             <!-- Add more links as needed -->
-        </ul>
     </div>
     <div id="content">
+        
         <section>
             <h1>hi! i'm umar.</h1>
             <p>apsum nisi exercitation minim esse elit esse.</p>
@@ -41,7 +40,6 @@ container
     align-items: normal;
     align-content: normal;
     position: relative;
-    /* right: 11em; */
     width: 35em;
 }
 #container * {
@@ -50,7 +48,7 @@ container
 #content {
     text-align:justify;
     width: 75%;
-    margin-top: 3em;
+    margin-top: 2em;
     display: block;
     flex-grow: 2;
     flex-shrink: 1;
@@ -59,7 +57,7 @@ container
     order: 0;
 }
 #sidebar {
-    display: block;
+    display: flex;
     flew-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -67,6 +65,14 @@ container
     order: 0;
     margin-right: 4.0em;
     margin-top: 4.0em;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+    padding-top: 4.0em;
+}
+
+#sidebar a {
+    text-decoration: none;
 }
 
 
