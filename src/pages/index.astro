@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Dotmatrix from '../components/Dotmatrix.astro';
-import Container from '../components/Container.astro';
+import Home from '../components/Home.astro';
 --- 
 
 <Layout title="Umar Rajguru">
@@ -9,8 +9,7 @@ import Container from '../components/Container.astro';
 		<body>
 			<div id="main">
 				<Dotmatrix />
-				<h1>hi! i'm umar.</h1>	
-				<Container />		
+				<Home />		
 			</div>
 			
 		</body>
@@ -22,21 +21,22 @@ import Container from '../components/Container.astro';
 		/* overflow: hidden; */
 		margin: auto;
 		padding: 0rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		
 		line-height: 1.4;
-		background-color: #1c1e21;
+		background-color: #faead6;
 	}
 	#main {
-		/* text-align:center; */
-		width: 35em;
+		/* text-align:center;  */
+		/* width: 35em; */
+		width: 800px;
+		max-width: calc(100% - 2rem);
 		margin: 4.0em auto;
-		color: #1c1e21;
+		color: #faead6;
 	}
 	#main h1 {
 		font-size: 1.5em;
 		font-weight: 300;
-		text-align:center;
-		color: #dbdbdb;
+		
+		color: #3a352a
 	}
 </style>

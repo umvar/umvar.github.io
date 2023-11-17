@@ -1,0 +1,74 @@
+
+<!-- 
+
+container
+    sidebar
+    content
+    footer (external links)
+    
+ -->
+ <div id="container">
+    <div id="sidebar">
+        <!-- Add your sidebar content here -->
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">film</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </div>
+    <div id="content">
+        <section>
+            <h1>hi! i'm umar.</h1>
+            <p>apsum nisi exercitation minim esse elit esse.</p>
+            <p>adipisicing ullamco aute sunt cupidatat magna ad duis. pariatur eiusmod elit qui cupidatat excepteur Lorem.</p>
+            <p>laboris fugiat nisi anim nulla reprehenderit eiusmod magna nisi sint eiusmod reprehenderit mollit ullamco. laborum sunt esse enim veniam laborum.</p>
+       
+            <ul><h4>favourite album:</h4>
+                <li><em>guitar</em>, by daisuke tobari</li>
+            </ul>
+        </section>
+        
+    </div>
+ </div>
+<style>
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: Row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    position: relative;
+    /* right: 11em; */
+    width: 35em;
+}
+#container * {
+    color: #3a352a
+}
+#content {
+    text-align:justify;
+    width: 75%;
+    margin-top: 3em;
+    display: block;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+#sidebar {
+    display: block;
+    flew-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin-right: 4.0em;
+    margin-top: 4.0em;
+}
+
+
+
+</style>
