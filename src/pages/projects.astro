@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Dotmatrix from '../components/Dotmatrix.astro';
+import Projects from '../components/Projects.astro';
+--- 
+
+<Layout title="Umar Rajguru">
+	<html>
+		<body>
+			<div id="main">
+				<Dotmatrix />
+				<Projects />	
+			</div>
+			
+		</body>
+	  </html>
+</Layout>
+
+<style>
+	html {
+		/* overflow: hidden; */
+		margin: auto;
+		padding: 0rem;
+		
+		line-height: 1.4;
+		background-color: #faead6;
+		font-size: 0.95em;
+	}
+	#main {
+		/* text-align:center;  */
+		/* width: 35em; */
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		margin: 4.0em auto;
+		color: #faead6;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		overflow: auto;
+    	flex-direction: column;
+		margin-left: 8em;
+	}
+	#main h1 {
+		font-size: 1.5em;
+		font-weight: 300;
+		color: #3a352a
+	}
+</style>
