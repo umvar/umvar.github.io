@@ -1,10 +1,10 @@
 ---
-const { website, icon } = Astro.props;
+const { title, website, icon } = Astro.props;
 import Layout from '../layouts/Layout.astro';
 ---
 
 <p>
-    <a href={`${website}`} target="_blank" rel="noopener noreferrer">
+    <a href={`${website}`} target="_blank" rel="noopener noreferrer" title={title}>
         <iconify-icon class="a" icon={icon} width="20px" height="20px"></iconify-icon>
     </a>
 </p>
