@@ -1,3 +1,7 @@
+---
+import SocialIcon from "../components/SocialIcon.astro";
+---
+ 
  <div id="container">
     <div id="sidebar">
         <!-- Add your sidebar content here -->
@@ -18,7 +22,14 @@
                 <li><em>guitar</em>, by daisuke tobari</li>
             </ul>
         </section>
-        
+        <seciton>
+            <div id="socials">
+                <SocialIcon website="github.com/umvar" icon="akar-icons:github-fill"/>
+                <!-- <SocialIcon website="linkedin.com/in/umarrajguru" icon="akar-icons:linkedin-v1-fill"/> -->
+                <!-- <SocialIcon website="last.fm/user/Bosswalrus" icon="brandico:lastfm-rect"/> -->
+                <SocialIcon website="../../public/Resume_Umar_Rajguru.pdf" icon="mingcute:document-3-fill"/>
+            </div>
+        </section>
     </div>
  </div>
 <style>
@@ -66,6 +77,14 @@
     text-decoration: none;
 }
 
-
+#socials {
+      padding-left: 10px;
+      display: flex;
+    
+      padding-top: 0px;
+      gap: 20px;
+      overflow: hidden;
+      /* animation: startup-fade-social 6s ease-in-out forwards; */
+}
 
 </style>

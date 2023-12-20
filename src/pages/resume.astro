@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Dotmatrix from '../components/Dotmatrix.astro';
-import Home from '../components/Home.astro';
-
+import Film from '../components/Resume.astro';
 --- 
 
 <Layout title="Umar Rajguru">
@@ -10,7 +9,7 @@ import Home from '../components/Home.astro';
 		<body>
 			<div id="main">
 				<Dotmatrix />
-				<Home />	
+				<Film />	
 			</div>
 			
 		</body>
@@ -47,15 +46,5 @@ import Home from '../components/Home.astro';
 		font-size: 1.5em;
 		font-weight: 300;
 		color: #3a352a
-	}
-	#socials {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		align-items: flex-start;
-		align-content: flex-start;
-		overflow: auto;
-		flex-direction: column;
-		margin-left: 8em;
 	}
 </style>
