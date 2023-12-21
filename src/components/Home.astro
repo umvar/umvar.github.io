@@ -1,6 +1,5 @@
 ---
-import SocialIcon from "../components/SocialIcon.astro";
-import { Icon } from 'astro-icon'
+import SocialIcons from "./SocialIcons.astro";
 ---
  
  <div id="container">
@@ -25,11 +24,7 @@ import { Icon } from 'astro-icon'
         </section>
         <seciton>
             <div id="socials">
-                <SocialIcon title="github" website="https://github.com/umvar" icon="mdi:github"/>
-                <SocialIcon title="linkedin" website="https://linkedin.com/in/umarrajguru" icon="mdi:linkedin"/>
-                <!-- <SocialIcon website="last.fm/user/Bosswalrus" icon="brandico:lastfm-rect"/> -->
-                <SocialIcon title="email" website="mailto:umarrajguru@outlook.com" icon="mdi:email"/>
-                <SocialIcon title="resume" website="/Resume_Umar_Rajguru.pdf" icon="cv"/>
+                <SocialIcons />
             </div>
         </section>
     </div>
@@ -84,7 +79,7 @@ import { Icon } from 'astro-icon'
       display: flex;
     
       padding-top: 0px;
-      gap: 20px;
+      gap: 1em;
       overflow: hidden;
       /* animation: startup-fade-social 6s ease-in-out forwards; */
 }
