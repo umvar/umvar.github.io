@@ -7,7 +7,7 @@ import SocialIcons from "./SocialIcons.astro";
         <!-- Add your sidebar content here -->
             <a style="color:rgba(0, 0, 0, 0.4)" href="/">home</a>
             <a style="color:rgba(0, 0, 0, 1); font-weight: bold;"  href="/projects/">projects</a>
-            <a style="color:rgba(0, 0, 0, 0.4)" href="/film/">film</a>
+            <a style="color:rgba(0, 0, 0, 0.4)" href="/resume.pdf/" target="_blank">resume</a>
             <!-- Add more links as needed -->
     </div>
     <div id="content">
@@ -15,41 +15,82 @@ import SocialIcons from "./SocialIcons.astro";
         <section>
             <h1>projects.</h1>
         </section>
+        <a href="https://github.com/umvar/ProjectPythia" style="text-decoration: none" target=”_blank” >
         <div class="project">
+            <img alt=""" loading="lazy"decoding="async" data-nimg="1" src="/spaceapps.png">
+            <div class="desc">
             <p class="title" >Project Pythia: Kp Index Prediction</p>
+            <div id="linksym">
+                <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg>
+                  </p>
+            </div>
             <p>
                A machine learning approach to predicting Kp index values from DSCOVR satellite spectral data, paired with a ThreeJS visualization of the data with an interactive globe component.
             </p>
-            <div id="socials">
-                <p>
-                    <a href="https://github.com/umvar" target="_blank" rel="noopener noreferrer" title="github">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16M92.8 145.6a8 8 0 1 1-9.6 12.8l-32-24a8 8 0 0 1 0-12.8l32-24a8 8 0 0 1 9.6 12.8L69.33 128Zm58.89-71.4l-32 112a8 8 0 1 1-15.38-4.4l32-112a8 8 0 0 1 15.38 4.4m53.11 60.2l-32 24a8 8 0 0 1-9.6-12.8l23.47-17.6l-23.47-17.6a8 8 0 1 1 9.6-12.8l32 24a8 8 0 0 1 0 12.8"/></svg>
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://linkedin.com/in/umarrajguru" target="_blank" rel="noopener noreferrer" title="linkedin">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><g fill="currentColor"><path d="M11.5 6.027a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117c.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297c.408.408.78 1.05 1.095 1.772c.32.733.599 1.591.805 2.466c.206.875.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773c-.245-.232-.496-.526-.739-.808c-.126-.148-.25-.292-.368-.423c-.728-.804-1.597-1.527-3.224-1.527c-1.627 0-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423c-.243.282-.494.575-.739.808c-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21c.024-.826.16-1.73.365-2.606c.206-.875.486-1.733.805-2.466c.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335a.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708c-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295a12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502c.212-.202.4-.423.615-.674c.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504c.214.251.403.472.615.674c.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406a13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465c-.264-.265-.856-.523-1.733-.708c-.85-.179-1.877-.27-2.913-.27c-1.036 0-2.063.091-2.913.27"/></g></svg>
-                    </a>
-                </p>
+            <div id="tags">
+                <p>Python</p>
+                <p>TensorFlow</p>
+                <p>JavaScript</p>
+                <p>ThreeJS</p>
+            </div>
             </div>
           </div>
-      
+        </a>
+        <a href="https://umvar.github.io/3D-NBody-Simulation/" style="text-decoration: none" target=”_blank” >
           <div class="project">
+            <img alt=""" loading="lazy"decoding="async" data-nimg="1" src="/nbody.png">
+            <div class="desc">
             <p class="title">3D N-Body Simulation</p>
-            <p>
-               Web-based 3D N-Body simulation using ThreeJS and React.
-            </p>
+            <div id="linksym">
+                <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg>
+                  </p>
+            </div>
+            <p>Web-based 3D N-Body simulation using ThreeJS and React.</p>
+            <div id="tags">
+                <p>JavaScript</p>
+                <p>ThreeJS</p>
+                <p>React</p>
+            </div>
+            </div>
           </div>
-      
+        </a>
+        <a href="https://github.com/umvar/double-pendulum" style="text-decoration: none" target=”_blank” >
           <div class="project">
+            <img alt=""" loading="lazy"decoding="async" data-nimg="1" src="/rk4_trajectory.png">
+            <div class="desc">
             <p class="title">Double Pendulum Numerical Solver</p>
+            <div id="linksym">
+                <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg>
+                  </p>
+            </div>
             <p>Numerical solver for a double pendulum system with a tracjetory plot visualization of motion data.</p>
+            <div id="tags">
+                <p>C++</p>
+            </div>
+            </div>
           </div>
-      
+        </a>
+        <a href="https://github.com/umvar/JadeVM" style="text-decoration: none" target=”_blank” >
           <div class="project">
+            <img alt=""" loading="lazy"decoding="async" data-nimg="1" src="/vm.png">
+            <div class="desc">
             <p class="title">JadeLang Virtual Machine</p>
-            <p>Developed a stack-based virtual machine for the bytecode execution of a syntantically unique programming language.</p>
+            <div id="linksym">
+                <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg>
+                  </p>
+            </div>
+            <p>A stack-based virtual machine for the bytecode execution of a syntantically unique programming language.</p>
+            <div id="tags">
+                <p>C</p>
+                <p>Assembly</p>
+            </div>
+            </div>
           </div>
+        </a>
     </div>
  </div>
 <style>
@@ -80,10 +121,26 @@ import SocialIcons from "./SocialIcons.astro";
     order: 0;
 }
 
-#socials {
+#linksym {
       display: flex;
       gap: 0.5em;
+      padding-left: 0.75em;
 } 
+
+#tags {
+      display: flex;
+      gap: 0.5em;
+      
+} 
+
+#tags p {
+    margin-top: 1em !important;
+    font-size: 0.8em;
+    background: #3a352a;
+    color: #faead6;
+    border-radius: 0.5em;
+    padding: 0.25em 0.5em;
+}
 
 
 
@@ -103,15 +160,62 @@ import SocialIcons from "./SocialIcons.astro";
 }
 
 #sidebar a {
-    text-decoration: none;
+    text-decoration: none
+}
+
+#sidebar a:hover {
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .project {
+    display: flex;
+        align-items: start;
+        justify-content: center;
+    flex-direction: row;
     text-align: left;
-    margin-bottom: 1.5em;
+
+    /* make length longer */
+
+    margin-bottom: 3em;
+    width: 39em;
+    padding-right: 1em;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+
+}
+
+.project:hover {
+  border-radius: 0.375rem; /* Corresponds to rounded-md in Tailwind */
+  transition: all 0.3s ease; /* Corresponds to transition in Tailwind */
+
+  /* Motion reduce: transition-none doesn't have a direct equivalent in CSS.
+     You may need to manually handle this based on your specific use case. */
+
+    background-color: #d4c5b1;
+
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+img {
+    width: 25%;
+    border-radius: 5px;
+
+    margin-right: 1.5em;
+    margin-top: .5em;
+    float: left;
+
+}
+
+.desc {
+
 }
 
 .title {
+    float: left;
     color: #000;
     font-weight: 600;
     text-decoration: none;
@@ -120,6 +224,9 @@ import SocialIcons from "./SocialIcons.astro";
 .project p {
     margin-top: 0.5em !important;
     margin-bottom: -0.1em !important;
+
 }
+
+
 
 </style>
