@@ -21,13 +21,14 @@ import Home from '../components/Home.astro';
 	html {
 		/* overflow: hidden; */
 		margin: auto;
+		overflow: scroll;
 		padding: 0rem;
-		
 		line-height: 1.4;
 		background-color: #faead6;
 		font-size: 0.95em;
 	}
 	#main {
+		
     width: calc(100% - 8em); /* Adjust the width calculation as needed */
     max-width: calc(100% - 2rem);
     margin: 4.0em auto;
@@ -52,7 +53,6 @@ import Home from '../components/Home.astro';
 		justify-content: flex-start;
 		align-items: flex-start;
 		align-content: flex-start;
-		overflow: auto;
 		flex-direction: column;
 		margin-left: 8em;
 	}
