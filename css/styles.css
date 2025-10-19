@@ -1,0 +1,150 @@
+/* Root styles and global variables */
+:root {
+	--accent: 136, 58, 234;
+	--accent-light: 224, 204, 250;
+	--accent-dark: 49, 10, 101;
+	--accent-gradient: linear-gradient(
+		45deg,
+		rgb(var(--accent)),
+		rgb(var(--accent-light)) 30%,
+		white 60%
+	);
+	font-family: "Montserrat";
+	line-height: 1.4em;
+}
+
+/* HTML and body styles */
+html {
+	margin: auto;
+	overflow: auto;
+	padding: 0rem;
+	line-height: 1.4;
+	background-color: #faead6;
+	font-size: 0.95em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Main container */
+#main {
+	width: calc(100% - 8em);
+	max-width: calc(100% - 2rem);
+	margin: 4.0em auto;
+	color: #faead6;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-direction: column;
+	margin-left: 8em;
+}
+
+#main h1 {
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #3a352a;
+}
+
+/* Dotmatrix styles */
+#dotmatrix {
+	display: block;
+	font-family: 'Noto Sans Symbols 2';
+	font-size: 1.1rem;
+	font-weight: 400;
+	letter-spacing: -0.15em;
+	line-height: 1.1em;
+	color: #3a352a;
+	height: 9rem;
+	width: 9rem;
+	padding-left: 8.1rem;
+}
+
+/* Container for content and sidebar */
+#container {
+	text-align: center;
+	display: flex;
+	flex-direction: Row;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: normal;
+	position: relative;
+	width: 35em;
+}
+
+#container * {
+	color: #3a352a;
+}
+
+#content {
+	text-align: justify;
+	width: 75%;
+	margin-top: 2em;
+	display: block;
+	flex-grow: 2;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
+#sidebar {
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+	margin-right: 4.0em;
+	margin-top: 4.0em;
+	flex-direction: column;
+	gap: 8px;
+	text-align: right;
+	padding-top: 4.0em;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+
+/* Socials section */
+#socials {
+	padding-left: 10px;
+	display: flex;
+	padding-top: 0px;
+	gap: 1em;
+	overflow: hidden;
+}
+
+#socials a {
+	opacity: 1;
+	background-color: transparent;
+	text-decoration: none;
+	color: var(--socialunhighlighted);
+	display: inline-block;
+	transition: 0.3s;
+}
+
+#socials a:hover {
+	color: rgb(136, 127, 112);
+	transform: scale(1.3);
+}
+
+#socials a:hover:after {
+	transform: scale(1);
+}
+
+@media (max-width: 300px) {
+	#socials a {
+		transform: scale(0.5);
+	}
+}

@@ -98,4 +98,3 @@ window.onload = function() {
 	update();
 	setInterval(update, 100);
 }
-
